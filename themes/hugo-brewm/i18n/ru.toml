@@ -1,0 +1,257 @@
+# Please feel free to contribute to additional translation.
+# Copy this file and rename it to your language code.
+# Then translate the values.
+[404PageNotFound]
+    other = "Страница не найдена"
+[404Alert]
+    other = "This page intentionally redirect" #???
+[404ReturnHome]
+    other = "back to homepage"
+[accessibility]
+    other = "Специальные возможности"
+[accessTime]
+    other = "This page is accessed on" #???
+[allPosts]
+    other = "Все посты"
+[appearance]
+    other = "Вид"
+[articles]
+    one = "Статья"
+    other = "Статьи"
+[audio]
+    other = "Аудио"
+[author]
+    one = "Автор"
+    other = "Авторы"
+[back]
+    other = "Назад"
+[baselineStretch]
+    other = "Baseline Stretch" #???
+[bionRead]
+    other = "BionRead Mode" #???
+[breadcrumb]
+    other = "Breadcrumb" # Хлебные крошки??
+[buildTime]
+    other = "This page is built on" #??? Страницу еще делают
+[bypass]
+    other = "Bypass" # Обойти?
+[categories]
+    one = "Категория"
+    other = "Категории"
+[close]
+    other = "Закрыть"
+[coffeeStat]
+    other = "Coffee Stat"
+[coffeeCount]
+    other = "Made with ❤️ and " # Сделано кровью и потом
+[coffeeCountPost]
+    other = ", if not more." # Если не более?
+[colophon]
+    other = "Colophon" # Колофон?
+[colorPalette]
+    other = "Color Palette" # Цветовая палитра?
+[colorSettings]
+    other = "Color Settings" # Настройки цвета
+[comments]
+    other = "Discussion" # Обсуждение
+[contrast]
+    other = "Contrast" # Контраст
+[contrib]
+    other = "Contribute" #"Добавить"
+[contribAskReader]
+    other = "Enjoy this article?" #Вам нравится эта статья?
+[contribAskReaderResponse]
+    other = "Awesome!" # Кайф!
+[contribAskReaderToContribute]
+    one = "You can also support me by making the following contributions:"
+    other = "You can also support us by making the following contributions:"
+    # Вы можете поддержать меня здесь
+[contribCoffeeStat]
+    other = "Did you know that" #А вы знали что?
+[contribCoffeeStatPost]
+    one =  "helped me write this article?" # Хотите помочь мне дописать статью?
+    other = "helped us write this article?"
+[copy]
+    other = "Скопировать URL"
+[copying]
+    other = "Копирование..."
+[ctaComments]
+    other = "Присоедениться к обсужденю"
+[cup]
+    one = "Cup of coffee" # какой кофе?
+    other = "Cups of coffee"
+[currentLang]
+    other = "Текущий язык"
+[dark]
+    other = "Темная"
+[darkMode]
+    other = "Темная тема"
+[defaultColor]
+    other = "По-умолчанию"
+[defaultContrast]
+    other = "По-умолчанию"
+[deuteranopia]
+    other = "Deuteranopia" #Какая-то неразличимость цвета
+[discover]
+    other = "Discover Topics" #Изучить новые темы?
+[editedBy]
+    other = "Изменено"
+[email]
+    other = "Email" #Отвечаю, я перевел :)
+[featuredImg]
+    other = "Featured image"
+[fediverseBluesky]
+    other = "Reply with bluesky"
+[fediverseErr]
+    other = "Ошибка при загрузке комментариев"
+[fediverseIsLoading]
+    other = "Loading comments on Fediverse" # кого?
+[fediverseReplies]
+    one = "Ответ"
+    other = "Ответы"
+[fediverseReblogs]
+    one = "Reblog"
+    other = "Reblogs" # Типо репост?
+[fediverseFavourites]
+    one = "Избранное"
+    other = "Избранное"
+[focusMode]
+    other = "Режим фокусирования"
+[followRSS]
+    other = "Подписаться на RSS"
+[fontSize]
+    other = "Размер шрифта"
+[home]
+    other = "Домой"
+[ifNoAudioSupport]
+    other = "Ваш браузер не поддерживает это аудио"
+[in]
+    other = "в"
+[inNewTab]
+    other = "в новой вкладке"
+[keepInTouch]
+    other = "Будем на связи!"
+[lessContrast]
+    other = "Низкий"
+[light]
+    other = "Светлый"
+[link]
+    one = "Ссылка"
+    other = "Ссылки"
+[main]
+    other = "Главное меню"
+[marginpar]
+    other = "Additional Notes" # Примечания?
+[menuControls]
+    other = "Accessibility Menu Controls" # МЕНЮ УПРАВЛЕНИЯ СПЕЦИАЛЬНЫМИ ВОЗМОЖНОСТЯМИ
+[modified]
+    other = "Modified"
+[monochrome]
+    other = "Monochrome"
+[more]
+    other = "More Menu"
+[moreContrast]
+    other = "High"
+[nav]
+    other = "Navigation"
+[networkGraph]
+    other = "Content Network Graph"
+[next]
+    other = "Next"
+[noArticle]
+    other = "No articles to show."
+[noArticlePost]
+    other = "It appears that our author ran out of coffee... Keep calm, we'll brew one shortly!"
+[noComment]
+    other = "No comments to display."
+[noGiscus]
+    other = "Giscus require Javascript and LocalStorage to be enable."
+[noScript]
+    other = "Uh-oh... Javascript is disabled!"
+[noLocalStorage]
+    other = "LocalStorage is not available in your browser. Settings won't be saved."
+[note]
+    other = "Note"
+[on]
+    other = "On"
+[OpenDyslexic]
+    other = "Use OpenDyslexic Font"
+[optimizeSR]
+    other = "Screen Reader Optimization"
+[optimizeSRDesc]
+    other = "Optimize display and resources for screen reader users who navigate with a pointer device."
+[pages]
+    one = "Page"
+    other = "Pages"
+[pagination]
+    other = "Pagination"
+[posts]
+    one = "Post"
+    other = "Posts"
+[postsBy]
+    other = "Post by"
+[postsOn]
+    other = "Posts on"
+[poweredBy]
+    other = "Powered by"
+[prev]
+    other = "Previous"
+[print]
+    other = "Print"
+[protanopia]
+    other = "Protanopia"
+[published]
+    other = "Published"
+[readingTime]
+    other = "Min read"
+[recent]
+    other = "Recent Posts"
+[redactionHistory]
+    other = "Redaction History"
+[redactionNotes]
+    other = "Some information might changes over time, we keep redaction up to date."
+[related]
+    other = "You might also like"
+[reset]
+    other = "Reset"
+[reviewedBy]
+    other = "Reviewed By"
+[save]
+    other = "Save"
+[search]
+    other = "Search"
+[seeAll]
+    other = "See all"
+[seeMore]
+    other = "Explore more topics"
+[section]
+    other = "Section"
+[selectLang]
+    other = "Language Selections"
+[series]
+    other = "Series"
+[share]
+    other = "Share"
+[shareOn]
+    other = "Share on"
+[slide]
+    one = "slide"
+    other = "slides"
+[stage]
+    one = "Stage"
+    other = "Stages"
+[switchLangTo]
+    other = "Switch Language to"
+[TableOfContents]
+    other = "Table of Contents"
+[tags]
+    one = "Tag"
+    other = "Tags"
+[toContent]
+    other = "Skip to Main Content"
+[toTop]
+    other = "To Content Top"
+[top-nav]
+    other = "Top"
+[tritanopia]
+    other = "Tritanopia"
