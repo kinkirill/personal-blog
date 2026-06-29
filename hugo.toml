@@ -1,24 +1,22 @@
 baseURL = 'https://nl.kinkirill.ru/'
-theme = ""
+#theme = ""
 
-# Язык, который будет открываться по умолчанию в корне сайта (без префикса /ru/ или /en/)
 defaultContentLanguage = 'ru'
-# Если хотите, чтобы дефолтный язык тоже принудительно имел префикс в URL (например, /ru/about/), поставьте true
 defaultContentLanguageInSubdir = true
 
 [params]
   [params.author]
-    name = "ololo"
+    name = "kinkirill"
     email = "your-email@example.com"
 
 # --- НАСТРОЙКА ЛОКАЛЕЙ ---
 [languages]
   [languages.ru]
-    languageName = 'Русский'
+    label = 'Русский'
     title = 'kinkirill-б'
     weight = 1 # Первая локаль (откроется по умолчанию)
 
   [languages.en]
-    languageName = 'English'
+    label = 'English'
     title = 'kinkirill-b'
     weight = 2 # Вторая локаль (будет доступна по адресу домен.ком/en/)
