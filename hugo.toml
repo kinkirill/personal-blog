@@ -1,5 +1,5 @@
 baseURL = 'https://nl.kinkirill.ru/'
-#theme = ""
+theme = "hugo-brewm"
 
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
