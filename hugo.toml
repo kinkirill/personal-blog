@@ -1,5 +1,5 @@
 baseURL = 'https://nl.kinkirill.ru/'
-theme = "hugo-brewm"
+theme = ""
 
 # Язык, который будет открываться по умолчанию в корне сайта (без префикса /ru/ или /en/)
 defaultContentLanguage = 'ru'
@@ -15,10 +15,10 @@ defaultContentLanguageInSubdir = true
 [languages]
   [languages.ru]
     languageName = 'Русский'
-    title = 'Мой блог на Hugo'
+    title = 'kinkirill-б'
     weight = 1 # Первая локаль (откроется по умолчанию)
 
   [languages.en]
     languageName = 'English'
-    title = 'My New Hugo Project'
+    title = 'kinkirill-b'
     weight = 2 # Вторая локаль (будет доступна по адресу домен.ком/en/)
