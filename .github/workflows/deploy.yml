@@ -1,0 +1,47 @@
+name: Deploy Hugo Site
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+
+        uses: actions/checkout@v4
+
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+
+        uses: peaceiris/actions-hugo@v3
+
+        with:
+          hugo-version: "latest"
+
+          extended: true
+
+      - name: Build Static Files
+
+        run: hugo --gc --minify
+
+      - name: Deploy to Ubuntu via Rsync
+
+        uses: easingthemes/ssh-deploy@v5
+
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+
+          TARGET: /var/www/bloggershtoli
+
+          SOURCE: public/
+
+          ARGS: -avz --delete
