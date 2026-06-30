@@ -159,11 +159,11 @@
 [next]
     other = "Next"
 [noArticle]
-    other = "No articles to show."
+    other = "Статей пока нет"
 [noArticlePost]
-    other = "It appears that our author ran out of coffee... Keep calm, we'll brew one shortly!"
+    other = "Похоже у автора закончилось кофе, время и код. Ожидаем загрузки новых данных"
 [noComment]
-    other = "No comments to display."
+    other = "Пока нет комментариев"
 [noGiscus]
     other = "Giscus require Javascript and LocalStorage to be enable."
 [noScript]
@@ -217,41 +217,41 @@
 [reviewedBy]
     other = "Reviewed By"
 [save]
-    other = "Save"
+    other = "Сохранить"
 [search]
-    other = "Search"
+    other = "Поиск"
 [seeAll]
-    other = "See all"
+    other = "Посмотреть всё"
 [seeMore]
     other = "Explore more topics"
 [section]
-    other = "Section"
+    other = "Секция"
 [selectLang]
-    other = "Language Selections"
+    other = "Выбор языка"
 [series]
     other = "Series"
 [share]
-    other = "Share"
+    other = "Поделиться"
 [shareOn]
-    other = "Share on"
+    other = "Поделиться"
 [slide]
-    one = "slide"
-    other = "slides"
+    one = "слайд"
+    other = "слайды"
 [stage]
     one = "Stage"
     other = "Stages"
 [switchLangTo]
-    other = "Switch Language to"
+    other = "Поменять язык на"
 [TableOfContents]
     other = "Table of Contents"
 [tags]
-    one = "Tag"
-    other = "Tags"
+    one = "Метка"
+    other = "Метки"
 [toContent]
-    other = "Skip to Main Content"
+    other = "Промотать"
 [toTop]
-    other = "To Content Top"
+    other = "Вернуться в начало"
 [top-nav]
-    other = "Top"
+    other = "Начало"
 [tritanopia]
     other = "Tritanopia"
