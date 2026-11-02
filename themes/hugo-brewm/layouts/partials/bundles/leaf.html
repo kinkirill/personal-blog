@@ -148,7 +148,7 @@
     <div id="colophon" style="display: none;" aria-live="polite">
         <strong class="section-title">{{ i18n "colophon" }}</strong>
         <div>
-            <div id="qr" role="img" aria-label="QR code"></div>
+            <div id="qr" role="img" aria-label="QR-код"></div>
             <div>
                 <div class="has-aria-label-top" aria-label="{{ .Title }}"><span>{{- .Permalink }}</span></div>
                 {{- $copyright := or site.Copyright site.Params.copyright site.Params.license }}
@@ -241,7 +241,7 @@
         <span>
             {{ i18n "contribAskReaderResponse" }}
             {{- with .Params.Coffee }}
-            {{ i18n "contribCoffeeStat" $authorCount }} {{ printf "%d %s" . (i18n "cup" . | lower) }} {{ i18n "contribCoffeeStatPost" }}
+            {{ i18n "contribCoffeeStat" $authorCount }} {{ printf "%d %s" . (i18n "cup" . | lower) }} {{ i18n "contribCoffeeStatPost" . }}
             {{- end }}
             {{ i18n "contribAskReaderToContribute" $authorCount }}
         </span>

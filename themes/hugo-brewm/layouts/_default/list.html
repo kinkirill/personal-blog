@@ -233,7 +233,7 @@
                     {{- with $pageGroup }}
                     <ul class="list-day" role="presentation">
                         {{- range . }}
-                        {{- $date := .Date.Format "2 Jan " }}
+                        {{- $date := time.Format ":date_medium" .Date }}
                         <li>
                             <a class="has-pre" href="{{ .RelPermalink }}" aria-label="{{.Title}}" aria-description="{{ $date }}">
                                 <span>{{.Title}}</span>
@@ -320,7 +320,7 @@
     <div style="display:flex;height:var(--vbody);width:100%;">
         <section class="hero" style="margin: auto; width: var(--canonic);" aria-labelledby="noArticle">
             <picture class="hero__image">
-                <img src="https://i.pinimg.com/736x/bf/34/76/bf3476c1569c5af162779ecbb4134c3a.jpg" alt="cat is unsure on what to do with his laptop">
+                <img src="https://i.pinimg.com/736x/bf/34/76/bf3476c1569c5af162779ecbb4134c3a.jpg" alt="{{ i18n "noArticleImageAlt" }}">
             </picture>
             <div class="hero__content">
                 <h1 id="noArticle" style="font-size:var(--large);font-weight:500;">{{ i18n "noArticle" }}</h1>

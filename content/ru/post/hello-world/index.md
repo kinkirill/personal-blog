@@ -137,6 +137,6 @@ impl SimRng {
 
 Файлы лежат в папке статьи. Обложка — `cover.svg` (подхватывается автоматически). Картинку можно вставить обычным markdown или шорткодом темы:
 
-![Окружность радиуса r](diagram.svg "Page bundle image")
+![Окружность радиуса r](diagram.svg "Картинка из папки статьи")
 
 {{< figure src="diagram.svg" alt="Окружность радиуса r" caption="Картинка на полях: type=margin" type="margin" >}}

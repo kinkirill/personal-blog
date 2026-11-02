@@ -78,7 +78,7 @@
         <input id="mastodonTitle" type="hidden" name="title" value="{{ $page.Title }}">
         <input id="mastodonPermalink" type="hidden" name="url" value="{{ $page.Permalink }}">
         <input id="mastodonText" type="hidden" name="text" value="{{ $page.Title }} {{ $page.Permalink }}" disabled>
-        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Введите адрес инстанса Mastodon (https://www.example.com)" aria-label="URL инстанса Mastodon">
         <button class="form__button" type="submit" aria-label="{{ i18n "shareOn" }} Mastodon">
             <i class="icon mastodon sri" aria-hidden="true"></i>
             <span class="t srt" role="tooltip">{{ i18n "shareOn" }} Mastodon</span>
