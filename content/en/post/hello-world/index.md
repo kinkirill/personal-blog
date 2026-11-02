@@ -9,7 +9,7 @@ categories = ['meta']
 translationKey = 'hello-world'
 +++
 
-This is a demo page to check how formulas, tables and code render. Once I write the first real article, this one goes to the archive.
+This is a demo page to check how formulas, tables and code render. Once I write the first real article, this one goes to the archive. (No)
 
 ## Combinatorics
 
