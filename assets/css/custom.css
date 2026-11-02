@@ -5,20 +5,22 @@
 
 
 /* Distinct background for code blocks: ~12% darker than the page in
-   the light theme, ~12% lighter in the dark theme. color-mix follows
-   the active --bg, so custom palettes and contrast modes are covered. */
+   the light theme, ~12% lighter in the dark theme. Mixing with --fg
+   (not #000/#fff) makes it work for the theme's manual switch too,
+   because --fg flips together with --bg. */
 .highlight > pre.chroma > code {
-    background-color: #e3e3e3; /* fallback */
-    background-color: color-mix(in srgb, var(--bg) 88%, #000);
+    background-color: var(--g18s); /* fallback */
+    background-color: color-mix(in srgb, var(--bg) 88%, var(--fg));
     border-radius: 1ex;
     padding: 0.75rem 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    .highlight > pre.chroma > code {
-        background-color: #2b2b2b; /* fallback */
-        background-color: color-mix(in srgb, var(--bg) 88%, #fff);
-    }
+/* The theme keeps comments at the golden-ratio width; make them span
+   the same wide text column as the article. */
+.giscus,
+#comments,
+#comments > * {
+    width: 100%;
 }
 
 /* Text column: full width of the article, same as tables and code. */
@@ -63,8 +65,8 @@
 @media (min-width: 1240px) {
     :root {
         --void: 3vw !important;
-        /* Right rail for the theme's margin notes, in percent as well. */
-        --marginparwidth: 18vw !important;
+        /* Right rail for margin notes: wide enough for the trinomial formula. */
+        --marginparwidth: clamp(22.5rem, 22vw, 24rem) !important;
     }
 
     /* Keep header, article and footer on the same column, and reserve
