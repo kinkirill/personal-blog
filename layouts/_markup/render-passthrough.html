@@ -1,0 +1,27 @@
+{{- /*
+
+    Override рендер-хука темы.
+
+    По умолчанию формулы рендерит KaTeX на этапе сборки (без JS).
+    Если в front matter статьи указано mathJax = true, отдаём TeX как есть,
+    и его отрисует MathJax в браузере. Это нужно для \label/\ref,
+    \newcommand и химии (mhchem), которые серверный KaTeX не умеет.
+
+*/ -}}
+{{- if .Page.Params.mathJax -}}
+    {{- if eq .Type "block" -}}
+        {{- printf "\\[%s\\]" .Inner | safeHTML -}}
+    {{- else -}}
+        {{- printf "\\(%s\\)" .Inner | safeHTML -}}
+    {{- end -}}
+{{- else -}}
+    {{- $opts := dict "output" "htmlAndMathml" "displayMode" (eq .Type "block") }}
+    {{- with try (transform.ToMath .Inner $opts) }}
+        {{- with .Err }}
+            {{- errorf "Не удалось отрендерить формулу через transform.ToMath: %s (см. %s). Если нужен полный LaTeX (\\label/\\ref/mhchem), поставь mathJax = true во front matter." . $.Position }}
+        {{- else }}
+            {{- .Value }}
+            {{- $.Page.Store.Set "hasMath" true }}
+        {{- end }}
+    {{- end }}
+{{- end -}}

@@ -1,22 +1,105 @@
 baseURL = 'https://nl.kinkirill.ru/'
-theme = "hugo-brewm"
+title = 'kinkirill'
+theme = 'hugo-brewm'
 
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
 
-[params]
-  [params.author]
-    name = "kinkirill"
-    email = "170978241+kinkirill@users.noreply.github.com"
+# Lastmod берётся из git (в CI нужен checkout с fetch-depth: 0)
+enableGitInfo = true
+enableRobotsTXT = true
+ignoreFiles = ['\.redacted$', '\.old$', '\.bak$', '\.tmp$', '\.swp$', '\.DS_Store$']
 
-# --- НАСТРОЙКА ЛОКАЛЕЙ ---
+[frontmatter]
+  date = [':default']
+  publishDate = ['publishDate', ':default']
+  lastmod = ['lastmod', ':default']
+  expiryDate = ['expiryDate', 'unpublishdate', ':default']
+
+# --- Markdown / математика ---
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+  [markup.highlight]
+    codeFences = true
+    noClasses = false
+    lineNos = false
+    tabWidth = 4
+
+  [markup.goldmark.renderer]
+    # разрешаем сырой HTML в markdown
+    unsafe = true
+
+  [markup.goldmark.extensions.passthrough]
+    # формулы рендерит KaTeX на этапе сборки (layouts/_markup/render-passthrough.html)
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['$$', '$$'], ['\[', '\]'], ['\begin{equation}', '\end{equation}'], ['\begin{align}', '\end{align}']]
+      inline = [['$', '$'], ['\(', '\)']]
+
+[outputs]
+  home = ['html', 'rss', 'json']
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
 [languages]
   [languages.ru]
+    contentDir = 'content/ru'
     label = 'Русский'
+    locale = 'ru-RU'
+    direction = 'ltr'
     title = 'kinkirill-б'
-    weight = 1 # Первая локаль (откроется по умолчанию)
+    weight = 1
 
   [languages.en]
+    contentDir = 'content/en'
     label = 'English'
+    locale = 'en-GB'
+    direction = 'ltr'
     title = 'kinkirill-b'
-    weight = 2 # Вторая локаль (будет доступна по адресу домен.ком/en/)
+    weight = 2
+
+[params]
+  title = 'kinkirill'
+  description = 'Личный блог: заметки о программировании, математике и не только.'
+  copyright = '© 2026 kinkirill'
+
+  [params.author]
+    name = 'kinkirill'
+    email = '170978241+kinkirill@users.noreply.github.com'
+
+  [params.posts]
+    colophon = true
+    related = true
+    share = true
+    # история правок на основе git-дат; включай, когда понадобится
+    disableHistory = true
+
+  [params.home]
+    featuredListing = ['categories', 'series']
+
+  [params.feed]
+    flowlines = true
+    flowlinesLimit = 21
+
+  [params.search]
+    # включим, когда добавим pagefind в CI
+    enable = false
+
+  # --- Giscus (раскомментируй и вставь ID с https://giscus.app) ---
+  # [params.giscus]
+  #   repo = 'kinkirill/personal-blog'
+  #   repoID = 'R_...'
+  #   category = 'General'
+  #   categoryID = 'DIC_...'
+  #   mapping = 'pathname'
+  #   reactionsEnabled = '1'
+  #   inputPosition = 'top'
+  #   theme = 'preferred_color_scheme'
+  #   loading = 'lazy'
