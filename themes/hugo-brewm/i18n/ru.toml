@@ -1,130 +1,146 @@
 # Please feel free to contribute to additional translation.
 # Copy this file and rename it to your language code.
 # Then translate the values.
+
 [404PageNotFound]
     other = "Страница не найдена"
 [404Alert]
-    other = "This page intentionally redirect" #???
+    other = "Эта страница намеренно перенаправляет"
 [404ReturnHome]
-    other = "back to homepage"
+    other = "вернуться на главную"
 [accessibility]
     other = "Специальные возможности"
 [accessTime]
-    other = "This page is accessed on" #???
+    other = "Страница открыта"
 [allPosts]
-    other = "Все посты"
+    other = "Все записи"
 [appearance]
     other = "Вид"
 [articles]
     one = "Статья"
+    few = "Статьи"
+    many = "Статей"
     other = "Статьи"
 [audio]
     other = "Аудио"
 [author]
     one = "Автор"
-    other = "Авторы"
+    few = "Автора"
+    many = "Авторов"
+    other = "Автора"
 [back]
     other = "Назад"
 [baselineStretch]
-    other = "Baseline Stretch" #???
+    other = "Межстрочный интервал"
 [bionRead]
-    other = "BionRead Mode" #???
+    other = "Режим BionRead"
 [breadcrumb]
-    other = "Breadcrumb" # Хлебные крошки??
+    other = "Хлебные крошки"
 [buildTime]
-    other = "This page is built on" #??? Страницу еще делают
+    other = "Страница собрана"
 [bypass]
-    other = "Bypass" # Обойти?
+    other = "К содержимому"
 [categories]
     one = "Категория"
+    few = "Категории"
+    many = "Категорий"
     other = "Категории"
 [close]
     other = "Закрыть"
 [coffeeStat]
-    other = "Coffee Stat"
+    other = "Кофейный счётчик"
 [coffeeCount]
-    other = "Made with ❤️ and " # Сделано кровью и потом
+    other = "Сделано кровью и потом. Кофе выпито: "
 [coffeeCountPost]
-    other = ", if not more." # Если не более?
+    other = ", если не больше." # Если не более?
 [colophon]
-    other = "Colophon" # Колофон?
+    other = "Колофон"
 [colorPalette]
-    other = "Color Palette" # Цветовая палитра?
+    other = "Цветовая палитра" # Цветовая палитра?
 [colorSettings]
-    other = "Color Settings" # Настройки цвета
+    other = "Настройки цвета" # Настройки цвета
 [comments]
-    other = "Discussion" # Обсуждение
+    other = "Обсуждение" # Обсуждение
 [contrast]
-    other = "Contrast" # Контраст
+    other = "Контраст" # Контраст
 [contrib]
-    other = "Contribute" #"Добавить"
+    other = "Поддержать" # Или всё таки добавить?
 [contribAskReader]
-    other = "Enjoy this article?" #Вам нравится эта статья?
+    other = "Понравилась статья?" # Вам нравится эта статья?
 [contribAskReaderResponse]
-    other = "Awesome!" # Кайф!
+    other = "Кайф!"
 [contribAskReaderToContribute]
-    one = "You can also support me by making the following contributions:"
-    other = "You can also support us by making the following contributions:"
-    # Вы можете поддержать меня здесь
+    other = "Хотите помочь мне дописать статью? Вы можете поддержать меня здесь:" # Вы можете поддержать меня здесь
 [contribCoffeeStat]
-    other = "Did you know that" #А вы знали что?
+    other = "А вы знали, что" # Что знали? КТО ВЫ ТО?
 [contribCoffeeStatPost]
-    one =  "helped me write this article?" # Хотите помочь мне дописать статью?
-    other = "helped us write this article?"
+    # Хотите помочь мне дописать статью?
+    # Здесь фраза согласуется с числом чашек: 1 помогла / 2 помогли.
+    one = "помогла мне написать эту статью?"
+    few = "помогли мне написать эту статью?"
+    many = "помогли мне написать эту статью?"
+    other = "помогли мне написать эту статью?"
 [copy]
     other = "Скопировать URL"
 [copying]
     other = "Копирование..."
 [ctaComments]
-    other = "Присоедениться к обсужденю"
+    other = "Присоединиться к обсуждению"
 [cup]
-    one = "Cup of coffee" # какой кофе?
-    other = "Cups of coffee"
+    # Какой кофе?
+    one = "чашка кофе"
+    few = "чашки кофе"
+    many = "чашек кофе"
+    other = "чашки кофе"
 [currentLang]
     other = "Текущий язык"
 [dark]
-    other = "Темная"
+    other = "Тёмная"
 [darkMode]
-    other = "Темная тема"
+    other = "Тёмная тема"
 [defaultColor]
-    other = "По-умолчанию"
+    other = "По умолчанию"
 [defaultContrast]
     other = "Средний"
 [deuteranopia]
-    other = "Deuteranopia" #Какая-то неразличимость цвета
+    other = "Дейтеранопия"
 [discover]
-    other = "Discover Topics" #Изучить новые темы?
+    other = "Что ещё почитать"
 [editedBy]
-    other = "Изменено"
+    other = "Редактор"
 [email]
-    other = "Email" #Отвечаю, я перевел :)
+    other = "Email" # Отвечаю, я перевел :)
 [featuredImg]
-    other = "Featured image"
+    other = "Обложка"
 [fediverseBluesky]
-    other = "Reply with bluesky"
+    other = "Ответить в Bluesky"
 [fediverseErr]
     other = "Ошибка при загрузке комментариев"
 [fediverseIsLoading]
-    other = "Loading comments on Fediverse" # кого?
+    other = "Загрузка комментариев из Fediverse"
 [fediverseReplies]
     one = "Ответ"
-    other = "Ответы"
+    few = "Ответа"
+    many = "Ответов"
+    other = "Ответа"
 [fediverseReblogs]
-    one = "Reblog"
-    other = "Reblogs" # Типо репост?
+    one = "Репост"
+    few = "Репоста"
+    many = "Репостов"
+    other = "Репоста"
 [fediverseFavourites]
     one = "Избранное"
     other = "Избранное"
 [focusMode]
-    other = "Режим фокусирования"
+    other = "Режим фокусировки"
 [followRSS]
     other = "Подписаться на RSS"
 [fontSize]
     other = "Размер шрифта"
 [home]
-    other = "Домой"
+    other = "Главная"
 [ifNoAudioSupport]
-    other = "Ваш браузер не поддерживает это аудио"
+    other = "Ваш браузер не поддерживает аудио"
 [in]
     other = "в"
 [inNewTab]
@@ -134,88 +150,99 @@
 [lessContrast]
     other = "Низкий"
 [light]
-    other = "Светлый"
+    other = "Светлая"
 [link]
     one = "Ссылка"
+    few = "Ссылки"
+    many = "Ссылок"
     other = "Ссылки"
 [main]
     other = "Главное меню"
 [marginpar]
-    other = "Additional Notes" # Примечания?
+    other = "Примечание"
 [menuControls]
-    other = "Accessibility Menu Controls" # МЕНЮ УПРАВЛЕНИЯ СПЕЦИАЛЬНЫМИ ВОЗМОЖНОСТЯМИ
+    other = "Управление специальными возможностями"
 [modified]
-    other = "Modified"
+    other = "Изменено"
 [monochrome]
-    other = "Monochrome"
+    other = "Монохромный"
 [more]
-    other = "More Menu"
+    other = "Ещё"
 [moreContrast]
-    other = "High"
+    other = "Высокий"
 [nav]
-    other = "Navigation"
+    other = "Навигация"
 [networkGraph]
-    other = "Content Network Graph"
+    other = "Граф связей"
 [next]
-    other = "Next"
+    other = "Далее"
 [noArticle]
     other = "Статей пока нет"
 [noArticlePost]
-    other = "Похоже у автора закончилось кофе, время и код. Ожидаем загрузки новых данных"
+    other = "Похоже, у автора закончились кофе, время и код. Ждём новых данных."
 [noComment]
-    other = "Пока нет комментариев"
+    other = "Комментариев пока нет"
 [noGiscus]
-    other = "Giscus require Javascript and LocalStorage to be enable."
+    other = "Для giscus нужны JavaScript и локальное хранилище."
 [noScript]
-    other = "Uh-oh... Javascript is disabled!"
+    other = "Ой... JavaScript отключён!"
 [noLocalStorage]
-    other = "LocalStorage is not available in your browser. Settings won't be saved."
+    other = "Локальное хранилище недоступно в вашем браузере. Настройки не сохранятся."
+[noArticleImageAlt]
+    other = "Кот не знает, что делать с ноутбуком"
 [note]
-    other = "Note"
+    other = "Примечание"
 [on]
-    other = "On"
+    other = ""
 [OpenDyslexic]
-    other = "Use OpenDyslexic Font"
+    other = "Использовать шрифт OpenDyslexic"
 [optimizeSR]
-    other = "Screen Reader Optimization"
+    other = "Оптимизация для скринридеров"
 [optimizeSRDesc]
-    other = "Optimize display and resources for screen reader users who navigate with a pointer device."
+    other = "Оптимизировать отображение и ресурсы для пользователей скринридеров, работающих с указателем."
 [pages]
-    one = "Page"
-    other = "Pages"
+    one = "Страница"
+    few = "Страницы"
+    many = "Страниц"
+    other = "Страницы"
 [pagination]
-    other = "Pagination"
+    other = "Постраничная навигация"
 [posts]
-    one = "Post"
-    other = "Posts"
+    one = "Пост"
+    few = "Поста"
+    many = "Постов"
+    other = "Поста"
 [postsBy]
-    other = "Post by"
+    other = "Автор"
 [postsOn]
-    other = "Posts on"
+    other = "Посты"
 [poweredBy]
-    other = "Powered by"
+    other = "Работает на"
 [prev]
-    other = "Previous"
+    other = "Назад"
 [print]
-    other = "Print"
+    other = "Печать"
 [protanopia]
-    other = "Protanopia"
+    other = "Протанопия"
 [published]
-    other = "Published"
+    other = "Опубликовано"
 [readingTime]
-    other = "Min read"
+    one = "минута чтения"
+    few = "минуты чтения"
+    many = "минут чтения"
+    other = "минуты чтения"
 [recent]
-    other = "Recent Posts"
+    other = "Свежие записи"
 [redactionHistory]
-    other = "Redaction History"
+    other = "История изменений"
 [redactionNotes]
-    other = "Some information might changes over time, we keep redaction up to date."
+    other = "Некоторые сведения могут со временем меняться; история изменений поддерживается в актуальном состоянии."
 [related]
-    other = "You might also like"
+    other = "Читайте также"
 [reset]
-    other = "Reset"
+    other = "Сбросить"
 [reviewedBy]
-    other = "Reviewed By"
+    other = "Проверяющий"
 [save]
     other = "Сохранить"
 [search]
@@ -223,35 +250,44 @@
 [seeAll]
     other = "Посмотреть всё"
 [seeMore]
-    other = "Explore more topics"
+    other = "Все темы"
 [section]
-    other = "Секция"
+    other = "Раздел"
 [selectLang]
     other = "Выбор языка"
 [series]
-    other = "Series"
+    one = "Серия"
+    few = "Серии"
+    many = "Серий"
+    other = "Серии"
 [share]
     other = "Поделиться"
 [shareOn]
-    other = "Поделиться"
+    other = "Поделиться:"
 [slide]
-    one = "слайд"
-    other = "слайды"
+    one = "Слайд"
+    few = "Слайда"
+    many = "Слайдов"
+    other = "Слайда"
 [stage]
-    one = "Stage"
-    other = "Stages"
+    one = "Стадия"
+    few = "Стадии"
+    many = "Стадий"
+    other = "Стадии"
 [switchLangTo]
-    other = "Поменять язык на"
+    other = "Переключить язык на"
 [TableOfContents]
-    other = "Table of Contents"
+    other = "Содержание"
 [tags]
     one = "Метка"
+    few = "Метки"
+    many = "Меток"
     other = "Метки"
 [toContent]
-    other = "Промотать"
+    other = "К содержимому"
 [toTop]
-    other = "Вернуться в начало"
+    other = "Наверх"
 [top-nav]
-    other = "Начало"
+    other = "В начало"
 [tritanopia]
-    other = "Tritanopia"
+    other = "Тританопия"

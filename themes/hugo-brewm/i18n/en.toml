@@ -161,6 +161,8 @@
     other = "No articles to show."
 [noArticlePost]
     other = "It appears that our author ran out of coffee... Keep calm, we'll brew one shortly!"
+[noArticleImageAlt]
+    other = "A cat unsure what to do with its laptop"
 [noComment]
     other = "No comments to display."
 [noGiscus]
