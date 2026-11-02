@@ -30,13 +30,10 @@ For example, $\binom{5}{2} = 10$, and $P_5 = 120$.
 The binomial theorem ties it all together:
 
 {{< marginpar >}}
-I haven't even shown you the trinomial yet:
+I haven't even shown you the trinom yet:
 
 $$
-\begin{aligned}
-(a+b+c)^2 &= a^2 + b^2 + c^2 \\
-&\quad + 2(ab + bc + ca)
-\end{aligned}
+(a + b + c)^n = \sum_{i + j + k = n} \frac{n!}{i! \, j! \, k!} a^i b^j c^k
 $$
 {{< /marginpar >}}
 
