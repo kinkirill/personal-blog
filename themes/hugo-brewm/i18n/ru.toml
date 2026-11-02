@@ -89,7 +89,7 @@
 [defaultColor]
     other = "По-умолчанию"
 [defaultContrast]
-    other = "По-умолчанию"
+    other = "Средний"
 [deuteranopia]
     other = "Deuteranopia" #Какая-то неразличимость цвета
 [discover]
