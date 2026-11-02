@@ -27,12 +27,13 @@
     {{- $dateMachine := "2006-01-02T15:04:05-07:00" }}
     {{- $dateOnly := "2006-01-02" }}
     {{- $hasMod := ne (.PublishDate.Format $dateOnly) (.Lastmod.Format $dateOnly) }}
+    {{- $lastMod := .Lastmod | time.Format ":date_long" }}
     {{- if $hasMod }}
         <div id="timestamp">
             <span>{{ i18n "published" }} {{ i18n "on" | lower }}</span>
             <time datetime="{{ .PublishDate.Format $dateMachine }}">{{- .PublishDate | time.Format ":date_long"  -}}</time>,
             <span>{{ i18n "modified" | lower }} {{ i18n "on" | lower }}</span>
-            <time datetime="{{ .Lastmod.Format $dateMachine }}">{{- .Lastmod | time.Format ":date_long"  -}}</time>.
+            <time datetime="{{ .Lastmod.Format $dateMachine }}">{{- $lastMod -}}</time>{{ if not (hasSuffix $lastMod ".") }}.{{ end }}
         </div>
     {{- else }}
         <time datetime="{{ .PublishDate.Format $dateMachine }}">{{- .PublishDate | time.Format ":date_long"  -}}</time>
