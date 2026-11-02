@@ -1,0 +1,48 @@
+:root {
+    /* mark & selector highlight color */
+    --hl: yellow;
+}
+
+/* Text column: full width of the article, same as tables and code. */
+#main-article section > p,
+#main-article audio,
+#content > blockquote,
+#content > ul,
+#content > ol,
+.epigraph > blockquote {
+    width: 100%;
+}
+
+/* Do not upscale small images just because the text column is wider;
+   keep their natural size, only shrink when they do not fit. */
+#main-article section > p img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Display math: centered within the same full-width text column. */
+#main-article section > .katex-display {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* On wide screens the theme centers a fixed 58rem column, which leaves
+   huge empty side margins. Use a percentage gutter instead, and reserve
+   the right part of the gutter for the theme's margin notes. */
+@media (min-width: 1240px) {
+    :root {
+        --void: 3vw !important;
+        /* Right rail for the theme's margin notes, in percent as well. */
+        --marginparwidth: 18vw !important;
+    }
+
+    /* Keep header, article and footer on the same column, and reserve
+       the right part of the gutter for the theme's margin notes. */
+    .pagewidth {
+        padding-right: calc(3vw + var(--marginparwidth) + 1rem) !important;
+    }
+}
