@@ -3,6 +3,24 @@
     --hl: yellow;
 }
 
+
+/* Distinct background for code blocks: ~12% darker than the page in
+   the light theme, ~12% lighter in the dark theme. color-mix follows
+   the active --bg, so custom palettes and contrast modes are covered. */
+.highlight > pre.chroma > code {
+    background-color: #e3e3e3; /* fallback */
+    background-color: color-mix(in srgb, var(--bg) 88%, #000);
+    border-radius: 1ex;
+    padding: 0.75rem 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .highlight > pre.chroma > code {
+        background-color: #2b2b2b; /* fallback */
+        background-color: color-mix(in srgb, var(--bg) 88%, #fff);
+    }
+}
+
 /* Text column: full width of the article, same as tables and code. */
 #main-article section > p,
 #main-article audio,
@@ -19,6 +37,15 @@
     width: auto;
     max-width: 100%;
     height: auto;
+}
+
+/* Math inside a margin note must not overflow the narrow right rail. */
+.marginpar .katex-display {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 /* Display math: centered within the same full-width text column. */
