@@ -29,6 +29,17 @@ $$
 
 Бином Ньютона собирает всё это вместе:
 
+{{< marginpar >}}
+Это я вам ещё трином не показал:
+
+$$
+\begin{aligned}
+(a+b+c)^2 &= a^2 + b^2 + c^2 \\
+&\quad + 2(ab + bc + ca)
+\end{aligned}
+$$
+{{< /marginpar >}}
+
 $$
 (x+y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
 $$
