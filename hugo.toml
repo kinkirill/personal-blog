@@ -92,14 +92,13 @@ ignoreFiles = ['\.redacted$', '\.old$', '\.bak$', '\.tmp$', '\.swp$', '\.DS_Stor
     # включим, когда добавим pagefind в CI
     enable = false
 
-  # --- Giscus (раскомментируй и вставь ID с https://giscus.app) ---
-  # [params.giscus]
-  #   repo = 'kinkirill/personal-blog'
-  #   repoID = 'R_...'
-  #   category = 'General'
-  #   categoryID = 'DIC_...'
-  #   mapping = 'pathname'
-  #   reactionsEnabled = '1'
-  #   inputPosition = 'top'
-  #   theme = 'preferred_color_scheme'
-  #   loading = 'lazy'
+  [params.giscus]
+    repo = 'kinkirill/personal-blog'
+    repoID = 'R_kgDOTISD5g'
+    category = 'General'
+    categoryID = 'DIC_kwDOTISD5s4DKL4X'
+    mapping = 'pathname'
+    reactionsEnabled = '1'
+    inputPosition = 'top'
+    theme = 'preferred_color_scheme'
+    loading = 'lazy'
